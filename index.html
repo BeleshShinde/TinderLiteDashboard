@@ -9,16 +9,29 @@
     integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
   <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css" rel="stylesheet">
     <style>
-    #section1 {
-      background-image: url("./bg.jpg");
-    }
+    
     #btn-back-to-top {
       position: fixed;
       bottom: 20px;
       right: 20px;
       display: none;
     }
-    
+    .gradient-bckground{
+      background:linear-gradient(300deg, #00bfff,#ff4c68,#ef8172);
+      background-size: 180% 180%;
+      animation: gradient-animation 18s ease infinite;
+    }
+    @keyframes gradient-animation{
+      0%{
+        background-position: 0% 50%;;
+      }
+      50%{
+        background-position: 100% 50%;
+      }
+      100%{
+        background-position: 0% 50%;
+      }
+    }
   </style>
 
 </head>
@@ -30,7 +43,7 @@
         id="btn-back-to-top">
   <i class="fas fa-arrow-up"></i>
 </button>
-  <section id="section1">
+  <section id="section1" class="gradient-bckground">
     <div class="container col-xxl-8  px-4 py-5">
       <div class="row flex-lg-row-reverse align-items-center g-5 py-5">
         <div class="col-10 col-sm-12 col-lg-6">
